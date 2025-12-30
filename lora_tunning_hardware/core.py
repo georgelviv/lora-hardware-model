@@ -22,7 +22,7 @@ class LoraHardware():
     self.serial_port = self.find_serial_port(self.port_filter)
     self.start_listener()
 
-  def stop(self):
+  async def stop(self):
     self.stop_listener()
 
   def find_serial_port(self, filter: str) -> str:
