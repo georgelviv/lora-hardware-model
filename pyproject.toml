@@ -1,5 +1,5 @@
 [project]
-name = "lora-tunning-hardware"
+name = "lora-hardware-model"
 version = "0.1.0"
 description = "Python class for lora tunning firmware"
 authors = [
