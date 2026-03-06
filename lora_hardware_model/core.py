@@ -53,7 +53,7 @@ class LoraHardwareModel():
     self.logger.info(f"Connected to {self.serial_port}")
 
     try:
-      while True:
+      while self.running:
         if self.ser.in_waiting > 0:
           line = self.ser.readline().decode("utf-8", errors="ignore").strip()
           if line:
